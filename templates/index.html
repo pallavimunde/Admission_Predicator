@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admission Chances</title>
+</head>
+<body style="background-color: rgb(212, 209, 242);">
+
+        </style>
+    <h1> Admission Chances Predictor. </h1>
+    <form method="GET" action="/prediction">
+
+    <label>GRE_Score (0-350) : </label>
+        <input type = "text" name = "GRE_Score">
+        </select>
+        <br>
+        <br>
+
+        <label>TOEFL_Score (0-150) : </label>
+        <input type = "text" name = "TOEFL_Score">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Sop (0-5) : </label>
+        <input type = "text" name = "Sop">
+        </select>
+
+        <br>
+        <br>
+
+        <label>LOR  (0-5) : </label>
+        <input type = "text" name = "LOR">
+        </select>
+        <br>
+        <br>
+
+        <label>University_Rating (0-5): </label>
+        <input type = "text" name = "University_Rating">
+        </select>
+
+        <br>
+        <br>
+        <label>CGPA (0-10) : </label>
+        <input type = "text" name = "CGPA">
+        </select>
+
+        <br>
+        <br>
+        
+        <label>Research :</label>
+
+        <label>Research (0 | 1) : </label>
+        <input type = "text" name = "Research">
+        </select>
+
+        <br>
+        <br>
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <h2><strong>Your Admission chances will be : <b><u> {{ result }} </u> % </b> </strong></h2>
+
+
+
+    </form>
+
+
+</body>
+</html>
